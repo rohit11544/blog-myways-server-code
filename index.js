@@ -41,9 +41,7 @@ const PORT = process.env.PORT || 5000;
 
 // connecting mongoDB to server
 mongoose
-  .connect(
-    "mongodb+srv://rohit11544:rohit123@cluster0.qmciq.mongodb.net/blogging?retryWrites=true&w=majority"
-  )
+  .connect(CONNECTION_URL)
   .then(() =>
     app.listen(PORT, () => console.log(`server running on port: ${PORT}`))
   )
