@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import BlogDetails from "../models/BlogDetails.js";
+import BlogDetails from "../models/blogDetails.js";
 
 export const getBlog = async (req, res) => {
   try {
