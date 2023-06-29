@@ -35,7 +35,7 @@ app.use("/admin", adminRoutes);
 app.use("/user", userRoutes);
 app.use("/blog", blogRoutes);
 
-const CONNECTION_URL = process.env.CONNECTION_URL;
+const CONNECTION_URL = "mongodb+srv://rohit11544:rohit123@cluster0.qmciq.mongodb.net/blogging?retryWrites=true&w=majority";
 
 const PORT = process.env.PORT || 5000;
 
